@@ -7,7 +7,7 @@ def main():
     b = 4
     c = 5
 
-    while c 
+    while True:
         while (c-b) > 0:
             
             # Check if the numbers add to 1000
