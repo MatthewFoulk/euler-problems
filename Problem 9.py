@@ -12,13 +12,13 @@ def main():
             
             # Check if the numbers add to 1000
             if a + b + c == 1000:
-                print(str(a) + " " + str(b) + " " + str(c))
                 sq_ab = square(a) + square(b)
                 sq_c = square(c)
 
                 # Check if numbers are a pythagorean triple
                 if sq_ab == sq_c:
                     print("A = " + str(a) + "\nB = " + str(b) + "\nC = " + str(c))
+                    print(a*b*c)
                     break
                 
             # Increase a, so long as it won't equal b with increase
@@ -34,6 +34,9 @@ def main():
         else:
             c += 1
             b = 4
+            continue 
+
+        break   
             
             
         
