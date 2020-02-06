@@ -1,5 +1,9 @@
+import time
+
 
 def main():
+
+    start_time = time.time()
 
     grid = [[8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8],
             [49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0],
@@ -57,6 +61,8 @@ def main():
                                     * grid[row + 3][num + 3])
                 
                 high_product = check_highest(diag_for_product, high_product)
+
+    print(time.time() - start_time)
 
 # Check if new product is higher than previous
 def check_highest(product, high_product):
